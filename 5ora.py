@@ -98,14 +98,16 @@ if isPrime:
 else:
     print("Ez nem egy prím.")
     """
-num = 2
+primes = [2,3,5,7,11,13,17,19,23]
+num = 25
 while True:
     isPrime = True
-    i = 2
-    while isPrime and i <= num // 2:
-        if num % i == 0:
+    for item in primes:
+        if num % item == 0:
             isPrime = False
-        i += 1
+            break
     if isPrime:
-        print(num)
-    num += 1
+        primes.append(num)
+    if num % 1000001 == 0:
+        print(primes)
+    num += 2
