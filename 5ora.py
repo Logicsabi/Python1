@@ -32,7 +32,7 @@ while n > 0:
     n -= 1
 print()
 
-
+"""
 # Melyik számra gondoltam?
 num = random.randint(1, 100)
 guessCount = 0
@@ -49,8 +49,16 @@ if guess == num:
     print(f"Gratulálok! Sikeresen kitaláltad {guessCount} lépésből, hogy erre a számra gondoltam: {num}")
 else:
     print(f"Ez most nem jött össze! Erre a számra gondoltam: {num}")
-
+"""
+import math
 # 1. feladat: Írjunk egy programot ami, ezt írja ki:
+i = -7
+while i < 8:
+    print( "*" * ( 8 - int(math.fabs(i)) ) )
+    i += 1
+
+for i in range(-7, 8):
+    print( "*" * ( 8 - int(math.fabs(i)) ) )
 """
 *
 **
@@ -70,4 +78,34 @@ else:
 """
 # 2. feladat: Olvassunk be folyamatosan számokat, amiket összegezzünk, egész addig, amíg 0-t nem írunk be
 #5, 3, 4, 6, 0 -> 18
-
+num = None
+while num != 0:
+    num = int(input("Adj meg egy egész számot: "))
+    összeg += num
+print("A beírt számok összege:", összeg)
+"""
+# 3. feladat: Írjunk egy programot, ami eldönti egy számról, hogy prímszám-e! While ciklussal
+num = int(input("Adj meg egy számot, amiről tudni akarod, hogy prím-e!\n"))
+isPrime = True
+i = 2
+while isPrime and i <= num // 2:
+    if i % 100000 == 0:
+        print(i)
+        isPrime = False
+    i += 1
+if isPrime:
+    print("Ez egy prím.")
+else:
+    print("Ez nem egy prím.")
+    """
+num = 2
+while True:
+    isPrime = True
+    i = 2
+    while isPrime and i <= num // 2:
+        if num % i == 0:
+            isPrime = False
+        i += 1
+    if isPrime:
+        print(num)
+    num += 1
