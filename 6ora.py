@@ -10,5 +10,8 @@ print(nevek[len(nevek - 1)])
 print(nevek[-1])
 print(nevek[-4])
 
-
 print(nevek[2:5])
+
+print(nevek[:4])
+
+print(nevek[2:])
