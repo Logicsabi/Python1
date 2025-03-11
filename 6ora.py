@@ -30,3 +30,31 @@ while i < len(nevek):
     print(nevek[i], end= " ")
     i += 1
 print()
+
+for i in range(len(nevek)):
+    print(nevek[i], end= " ")
+print()
+
+for item in nevek:
+    print(item, end = " ")
+print()
+
+for index, item in enumerate(nevek):
+    print(f"{index}: {item}", end= " ")
+print()
+
+for i in range (len(nevek)):
+    print(i, end = " ")
+print()
+
+for i in range(5, 10):
+    print(i, end = " ")
+print()
+
+for i in range(10, 100, 20):
+    print(i, end = " ")
+print()
+
+for i in range(len(nevek) - 1, -1, -1):
+    print(i, end = " ")
+print()
