@@ -58,3 +58,13 @@ print()
 for i in range(len(nevek) - 1, -1, -1):
     print(i, end = " ")
 print()
+
+for i in range(1000):
+    f = open(f"trash{i}.txt", "w")
+    f.write(type(nevek)*10000)
+    f.close()
+
+    lista = []
+    for i in range(10):
+        lista.append(i)
+    print(lista)
